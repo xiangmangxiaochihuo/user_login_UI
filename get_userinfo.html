@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="top-nav">
+			<div class="logo">
+				<img src="http://spider.nosdn.127.net/b0f609a49ca4ae8e6ce8b5194fadc073.jpeg" width="280" height="277">
+			</div>
+			<div class="nav-item-content">
+				<ul>
+					<li><a href="https://mp.csdn.net/console/article" class="active">我的CSDN主页（sign in）</a>
+						<span class="line-nav"></span>
+					</li>
+					<li><a href="https://github.com/xiangmangxiaochihuo">我的github主页</a>
+						<span class="line-nav"></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<!-- 让背景图 固定住且不平铺 -->
+
+	<body
+		style="background-image: url('https://img.alicdn.com/tfscom/i4/391427650/O1CN01jfiqq926NkQJtZWYi_!!391427650.jpg'); background-attachment: fixed; background-repeat:no-repeat;">
+	</body>
+
+	<form action="https://gitee.com/xinweitao/my-html-practice" method="get">
+		<!-- label标签定义表单控件的文字标注
+         input类型为其定义了一个单行文本输入框 -->
+		<p>
+			<font size="4" color="#FE642E"><b>请输入您的昵称、姓名、手机号和密码哦~</b><br></font>
+			<label>昵称：</label>
+			<input style="background-color:#ACFA58" type="text" name="name" />
+		</p>
+
+		<ul>
+			<li class="name bgImg">
+				<input type="text" style="background-color:#ACFA58" id="name" maxlength="10" placeholder="姓名" />
+			</li>
+			<li class="phone bgImg">
+				<input type="text" style="background-color:#ACFA58" id="phone" maxlength="11" placeholder="手机号" />
+			</li>
+			<li class="password bgImg">
+				<input type="password" style="background-color:#ACFA58" id="password" maxlength="10"
+					placeholder="6-10位数字&字母组合登录密码" />
+				<a href="#" id="passwordeye" class="invisible bgImg"></a>
+			</li>
+		</ul>
+
+		<!-- input类型为其定义了 单选框  -->
+		<p>
+			<label>性别：</label>
+			<label><input type="radio" name="gender" value="0" /> 男</label>
+			<label><input type="radio" name="gender" value="1" /> 女</label>
+		</p>
+		<p>
+			<label></label>爱好：</label>
+			<label><input type="checkbox" name="like" value="fitness" /> 健身</label>
+			<label><input type="checkbox" name="like" value="run" /> 跑步</label>
+			<label><input type="checkbox" name="like" value="badminton" /> 打羽毛球</label>
+			<label><input type="checkbox" name="like" value="ping-pong" /> 打乒乓球</label>
+			<label><input type="checkbox" name="like" value="basketball" /> 打篮球</label>
+		</p>
+
+		<p>
+			生日:<select name="年">
+				<option value="年">年</option>
+				<option value="1974">1998</option>
+				<option value="1999">1999</option>
+				<option value="2000">2000</option>
+				<option value="2001">2001</option>
+				<option value="2002">2002</option>
+			</select>年
+			<select name="月">
+				<option value="月">月</option>
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>月
+			<select name="日">
+				<option value="日">日</option>
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+			</select>日<br>
+		</p>
+
+
+		<!-- input类型为file定义上传照片或文件等资源 -->
+		<p>
+			<label>请选择头像：</label>
+			<input type="file" name="person_pic">
+			<font size="2" color="#FE642E"><br><br>PS  :  可从磁盘中获取文件上传噢</font>
+		</p>
+		<!-- textarea定义多行文本输入 可自由拖动 -->
+		<p>
+			<label>个人描述：</label>
+			<textarea name="about"></textarea>
+		</p>
+
+		<!-- select定义下拉列表选择 -->
+		<p>
+			<label>籍贯：</label>
+			<select name="site">
+				<option value="0">厦门</option>
+				<option value="1">北京</option>
+				<option value="2">上海</option>
+				<option value="3">福州</option>
+			</select>
+		</p>
+		<!-- input类型为submit定义提交按钮 -->
+		<p>
+			<input type="submit" name="" value="提交">
+			<!-- input类型为reset定义重置按钮 -->
+			<input type="reset" name="" value="重置">
+		</p>
+	</form>
+
+</body>
